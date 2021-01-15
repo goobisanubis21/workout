@@ -12,5 +12,13 @@ module.exports = function(app) {
         });
     });
 
-
+    app.post("/api/workouts", ({body}, res) => {
+        db.Workout.create(body)
+        .then((data) => {
+            res.json(data);
+        })
+        .catch(err => {
+            console.log(err)
+        });
+    });
 }
