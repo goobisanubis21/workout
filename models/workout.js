@@ -33,11 +33,6 @@ const workoutSchema = new Schema({
       sets: {
         type: Number
       },
-      
-      date: {
-        type: Date,
-        default: Date.now
-      }
     }
   ]
 });
