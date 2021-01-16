@@ -1,3 +1,5 @@
+// api routes and the data to get, add, and update the database
+
 const db = require("../models");
 
 module.exports = function (app) {
@@ -21,7 +23,7 @@ module.exports = function (app) {
                 console.log(err)
             });
     });
-    
+
     app.put("/api/workouts/:id", (req, res) => {
         db.Workout.findByIdAndUpdate(
           req.params.id,

@@ -1,12 +1,11 @@
+// Model to add our data into the database
+
 const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
 const WorkoutSchema = new Schema({
-  // date: {
-  //   type: Date,
-  //   default: () => new Date()
-  // },
+
   day: {
     type: Date,
     default: Date.now()

@@ -1,3 +1,5 @@
+// server file to connect to our host
+
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
