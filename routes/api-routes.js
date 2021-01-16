@@ -24,7 +24,7 @@ module.exports = function (app) {
 
     app.put("/api/workouts/:id", (req, res) => {
         db.Workout.findByIdAndUpdate(
-            { _id: req.params.id }, { exercises: req.body }
+            { _id: req.params.id }, { workouts: req.body }
         ).then((data) => {
             res.json(data);
         }).catch(err => {
